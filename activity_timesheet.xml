@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/loginbkg"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnHomeTimsheet"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/lavendar"
+        android:text="HOME"
+        android:textSize="18sp"
+        app:cornerRadius="20dp"
+
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+
+            <ImageView
+                android:id="@+id/ivImage"
+                android:layout_width="135dp"
+                android:layout_height="156dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/icons"
+
+                />
+
+            <Button
+                android:id="@+id/btnGallery"
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/lavendar"
+                android:text="Gallery"
+                android:drawableLeft="@drawable/baseline_photo_camera_24"
+                android:textSize="10dp"
+                app:cornerRadius="20dp"
+                tools:ignore="TextSizeCheck" />
+
+            <Button
+                android:id="@+id/btnCamera"
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/lavendar"
+                android:drawableLeft="@drawable/baseline_photowhite_24"
+                android:text="CAMERA"
+                android:textSize="10dp"
+                app:cornerRadius="20dp"
+                tools:ignore="TextSizeCheck" />
+
+
+                <TextView
+                    android:id="@+id/tvDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Description:"
+                    android:textColor="@color/lavendar"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="66dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/custom"
+                    android:drawablePadding="8dp"
+                    android:hint="Enter description"
+                    android:padding="8dp"
+                    android:textColor="@color/black" />
+
+
+            </LinearLayout>
+    </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+
